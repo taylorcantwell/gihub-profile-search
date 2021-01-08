@@ -32,7 +32,7 @@ const SearchBar = () => {
     });
 
     //!! styled component using state data for styling
-    const $ErrorMessage = styled.div`
+    const ErrorMessage = styled.div`
         display: ${userExists === false ? 'inline-block' : 'none'};
 
         background-color: pink;
@@ -40,10 +40,10 @@ const SearchBar = () => {
     `;
 
     return (
-        <$Container>
-            <$Header>Git Profile</$Header>
+        <Container>
+            <Header>Git Profile</Header>
             <form>
-                <$SearchInput
+                <SearchInput
                     onChange={onChangeInput}
                     type="text"
                     value={searchValue}
@@ -52,15 +52,15 @@ const SearchBar = () => {
                     Search
                 </button>
             </form>
-            <$ErrorMessage>
+            <ErrorMessage>
                 The user your searched for does not exist.
-            </$ErrorMessage>
-        </$Container>
+            </ErrorMessage>
+        </Container>
     );
 };
 
 //! styled components
-const $Container = styled.div`
+const Container = styled.div`
     padding-bottom: 3rem;
     border-bottom: 1px solid black;
     button {
@@ -81,14 +81,14 @@ const $Container = styled.div`
     }
 `;
 
-const $Header = styled.h1`
+const Header = styled.h1`
     padding: 2rem 0 1rem 0;
     font-weight: 700;
     font-size: 3rem;
     letter-spacing: 3px;
     text-transform: uppercase;
 `;
-const $SearchInput = styled.input`
+const SearchInput = styled.input`
     border: 1px solid grey;
     border-radius: 5px;
     width: 25%;

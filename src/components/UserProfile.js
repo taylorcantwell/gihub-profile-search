@@ -17,24 +17,22 @@ const UserProfile = () => {
     });
 
     //! create list of repos -- slicing to first 5 elements
-    const repoList = data.repos
-        .map((repo) => {
-            return (
-                <a href={repo.html_url} style={{ display: 'block' }}>
-                    {repo.name}
-                </a>
-            );
-        })
-        .slice(0, 5);
-    console.log(isDataLoading);
+    const repoList = data.repos.map((repo) => {
+        return (
+            <a key={repo.id} href={repo.html_url} style={{ display: 'block' }}>
+                {repo.name}
+            </a>
+        );
+    });
+
     //! line 29 -if there is no avatar, display question mark
     return (
         <>
             {isDataLoading === true ? (
                 <Loader />
             ) : (
-                <$FlexContainer>
-                    <$ImageContainer>
+                <FlexContainer>
+                    <ImageContainer>
                         {data.avatar === '' ? (
                             <FontAwesomeIcon
                                 icon={faQuestion}
@@ -42,11 +40,13 @@ const UserProfile = () => {
                                 size="5x"
                             />
                         ) : null}
-                        <a href={`https://github.com/${data.avatarName}`}>
-                            <img src={data.avatar} />
-                        </a>
-                    </$ImageContainer>
-                    <$UserInformation>
+                        {data.avatarName ? (
+                            <a href={`https://github.com/${data.avatarName}`}>
+                                <img src={data.avatar} alt="github avatar" />
+                            </a>
+                        ) : null}
+                    </ImageContainer>
+                    <UserInformation>
                         <p>
                             Name: <span>{data.avatarName}</span>{' '}
                         </p>
@@ -58,11 +58,11 @@ const UserProfile = () => {
                         <p>
                             Repos: <span>{data.repositories}</span>
                         </p>
-                    </$UserInformation>
-                    <$Repository>
+                    </UserInformation>
+                    <Repository>
                         <p>Popular Repositories:</p> {repoList}
-                    </$Repository>
-                </$FlexContainer>
+                    </Repository>
+                </FlexContainer>
             )}
         </>
     );
@@ -71,11 +71,11 @@ const UserProfile = () => {
 export default UserProfile;
 
 //!styled Components
-const $FlexContainer = styled.div`
+const FlexContainer = styled.div`
     display: flex;
     padding-top: 3rem;
 `;
-const $ImageContainer = styled.div`
+const ImageContainer = styled.div`
     flex: 1;
     #icon {
         margin-left: 7rem;
@@ -91,7 +91,7 @@ const $ImageContainer = styled.div`
     }
 `;
 
-const $UserInformation = styled.div`
+const UserInformation = styled.div`
     flex: 1;
 
     p {
@@ -103,7 +103,7 @@ const $UserInformation = styled.div`
         }
     }
 `;
-const $Repository = styled.div`
+const Repository = styled.div`
     flex: 1;
 
     a {

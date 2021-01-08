@@ -2,19 +2,19 @@ import React from 'react';
 import styled from 'styled-components';
 import SearchBar from './components/SearchBar';
 import UserProfile from './components/UserProfile';
-import $Global from './components/GlobalStyles';
+import Global from './components/GlobalStyles';
 
 const App = () => {
     return (
-        <$Container>
-            <$Global />
+        <Container>
+            <Global />
             <SearchBar />
             <UserProfile />
-        </$Container>
+        </Container>
     );
 };
 
-const $Container = styled.div`
+const Container = styled.div`
     max-width: 1200px;
     margin: 0 auto;
 `;

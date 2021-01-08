@@ -14,7 +14,7 @@ const gitResultsReducer = (state = initState, action) => {
                 repositories: action.payload[0].data.public_repos,
                 followers: action.payload[0].data.followers,
                 avatarName: action.payload[0].data.login,
-                repos: action.payload[1].data,
+                repos: action.payload[1],
             };
 
         default:

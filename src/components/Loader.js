@@ -3,14 +3,14 @@ import styled from 'styled-components';
 
 const Loader = () => {
     return (
-        <$Loader>
+        <LoaderContainer>
             <div></div>
-        </$Loader>
+        </LoaderContainer>
     );
 };
 
 //!styled component
-const $Loader = styled.div`
+const LoaderContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
