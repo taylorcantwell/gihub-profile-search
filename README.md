@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+**Index:**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1.1 - Introduction
 
-## Available Scripts
+1.2 - User stories
 
-In the project directory, you can run:
+1.3 - Technology
 
-### `npm start`
+1.4 - Wireframe
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1.5 - Features that could be added and improved
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1.1 **Introduction**
+![Alt Text](https://i.gyazo.com/a4f6aa17b0419272442363aa5d393f0b.gif)
 
-### `npm test`
+Having somewhat gained a grasp of React and Redux, I felt I was ready to take on a project without the crutch of having the solution easily accessible in the form of a tutorial.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The idea of this project was taken from here: [https://github.com/florinpop17/app-ideas/blob/master/Projects/2-Intermediate/GitHub-Profiles.md](https://github.com/florinpop17/app-ideas/blob/master/Projects/2-Intermediate/GitHub-Profiles.md)
 
-### `npm run build`
+1.2 **The user stories of the project are the follow:**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [ ]  User can enter a username
+- [ ]  User can click on search button to retrieve information
+- [ ]  User can see the avatar, username, followers and repository count of searched user
+- [ ]  User can see the top 4 repositories of searched user
+- [ ]  User should get an alert if the username is not valid
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1.3 **Technology used:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- React
+- Redux/React-Redux/Redux-Thunk
+- Styled Components
+- GitHub API: [https://docs.github.com/en/free-pro-team@latest/rest](https://docs.github.com/en/free-pro-team@latest/rest)
+- Google Fonts
+- Font Awesome
 
-### `npm run eject`
+1.4 **Here is a simple wireframe I put together for some structure and aim for the project:**
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f6482100-9a90-4238-a640-160db1cc2eb8/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f6482100-9a90-4238-a640-160db1cc2eb8/Untitled.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1.5 **Features that could be added/improved**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- To improve the app client shouldn't be able to search without entering an input or without changing the input since last search.
+- Input should be checked to see if it's valid.
+- UI should reset when client search returns a non existent user instead of past search results.
