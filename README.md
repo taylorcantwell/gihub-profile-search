@@ -37,7 +37,7 @@ The idea of this project was taken from here: [https://github.com/florinpop17/ap
 
 1.4 **Here is a simple wireframe I put together for some structure and aim for the project:**
 
-![Alt Text](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f6482100-9a90-4238-a640-160db1cc2eb8/Untitled.png)
+![Alt Text](https://i.gyazo.com/4bf0ac2cbcd51314db4b496aa9270b0f.png)
 
 1.5 **Features that could be added/improved**
 
