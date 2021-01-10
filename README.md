@@ -11,6 +11,7 @@
 1.5 - Features that could be added and improved
 
 1.1 **Introduction**
+
 ![Alt Text](https://i.gyazo.com/a4f6aa17b0419272442363aa5d393f0b.gif)
 
 Having somewhat gained a grasp of React and Redux, I felt I was ready to take on a project without the crutch of having the solution easily accessible in the form of a tutorial.
@@ -36,7 +37,7 @@ The idea of this project was taken from here: [https://github.com/florinpop17/ap
 
 1.4 **Here is a simple wireframe I put together for some structure and aim for the project:**
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f6482100-9a90-4238-a640-160db1cc2eb8/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f6482100-9a90-4238-a640-160db1cc2eb8/Untitled.png)
+![Alt Text](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f6482100-9a90-4238-a640-160db1cc2eb8/Untitled.png)
 
 1.5 **Features that could be added/improved**
 
